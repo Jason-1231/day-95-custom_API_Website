@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <h1>{{ symbol }}</h1>
+        <div>
+            <ul>
+                <li>Date: {{ date }}</li>
+                <li>Opening price: ${{ open }}</li>
+                <li>Closing price: ${{ close }}</li>
+                <li>Percentage Change: {{ change }}%</li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+{% endblock %}
